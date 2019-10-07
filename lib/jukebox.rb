@@ -14,6 +14,7 @@ puts "#{idx}. #{ele}"
 end
 
 def play(song_arr)
+<<<<<<< HEAD
   puts "Please enter a song name or number:"
   user_answer = gets.strip
   song_arr.each.with_index(1) do |ele, idx|
@@ -58,3 +59,15 @@ def run(song_arr)
 end
 end
   
+=======
+puts "Please enter a song name or number:"
+user_answer = gets.strip
+song_arr.each.with_index(1) do |ele, idx|
+  if user_answer == idx.to_s || user_answer == ele
+    puts  "Playing #{ele}"
+  elsif user_answer != idx.to_s || user_answer != ele
+    puts "Invalid input, please try again"
+  end
+end
+end
+>>>>>>> 07cc67095f0642292364797b6e8d4b8c7e14f688
